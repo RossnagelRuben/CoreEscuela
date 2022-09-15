@@ -12,9 +12,17 @@ namespace Etapa01
             Escuela.Ciudad="EldoCity";
 
             Console.WriteLine("Welcome!");
+            Console.WriteLine("");
             Console.ReadKey();
-            Console.WriteLine(Escuela.Nombre);
+            Console.WriteLine(Escuela.NombreEscuela);
+            Console.WriteLine("");
+            Console.ReadKey();
 
+            //Console.WriteLine(Escuela);
+            //de fondo, c# usar el ToString al momento de ejecutar esta linea...
+            //lo que podemos hacer es sobreescribir el metodo construcor de ToString...
+
+            Console.WriteLine(Escuela);
         }
     }
 
