@@ -1,5 +1,6 @@
 namespace CoreEscuela.Entidades
 {
+    
     public class Escuela
     {
         string nombre;
@@ -13,6 +14,7 @@ namespace CoreEscuela.Entidades
 
         public string Ciudad { get; set; }
 
+        public TiposEscuelas tiposEscuelas {get; set;}
 
         // => igualacion por tuplas
         //metodo constructor
@@ -20,7 +22,7 @@ namespace CoreEscuela.Entidades
 
             public override string ToString()
             {
-                return $"Nombre de la escuela: {Nombre}";
+                return $"La escuela: {Nombre} \nes una escuela: {tiposEscuelas}";
             }
 
     }

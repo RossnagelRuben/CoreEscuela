@@ -7,14 +7,16 @@ namespace Etapa01
     {
         static void Main(string[] args)
         {
-            var Escuela = new Escuela("Platzi",2012);
-            Escuela.Pais="Argentina";
-            Escuela.Ciudad="EldoCity";
+            //instanciamos el objeto
+            var escuela = new Escuela("Platzi",2012);
+            escuela.Pais="Argentina";
+            escuela.Ciudad="EldoCity";
+            escuela.tiposEscuelas = TiposEscuelas.Primaria;
 
             Console.WriteLine("Welcome!");
             Console.WriteLine("");
             Console.ReadKey();
-            Console.WriteLine(Escuela.NombreEscuela);
+            Console.WriteLine(escuela.NombreEscuela);
             Console.WriteLine("");
             Console.ReadKey();
 
@@ -22,7 +24,7 @@ namespace Etapa01
             //de fondo, c# usar el ToString al momento de ejecutar esta linea...
             //lo que podemos hacer es sobreescribir el metodo construcor de ToString...
 
-            Console.WriteLine(Escuela);
+            Console.WriteLine(escuela);
         }
     }
 
